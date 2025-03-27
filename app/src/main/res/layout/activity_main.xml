@@ -4,15 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:rotationX="0">
+    android:rotationX="0"
+    android:layout_margin="16dp"
+    >
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        tools:text="cesta de frutas"
+        android:textSize="20sp"
         android:text="Salada de frutas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salada de banana,maça,uva e pera"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+
+    <TextView
+    android:id="@+id/preco"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="19.89"
+    app:layout_constraintTop_toBottomOf="@+id/descricao"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
